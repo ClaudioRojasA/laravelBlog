@@ -15,7 +15,7 @@ class PostController extends Controller
 
     public function add(){
 
-        return view('admin.post.add');
+        return view('admin.posts.add');
     
     }
 
