@@ -16,6 +16,8 @@ use App\Http\Controllers\PostController;
 
 Route::get('/',[PostController::class, 'index']);
 
+Route::get('/admin/post/add',[PostController::class, 'add']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
