@@ -29,6 +29,8 @@ class PostController extends Controller
         $post->post_content = $request->post_content;
 
         $post->save();
+
+        return redirect()->back()->with('message','Post Added Successfully');
     }
 
 }
