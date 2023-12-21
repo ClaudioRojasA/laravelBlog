@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('post_title');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->longText('post_content');
             $table->unsignedBigInteger('category_id');
             $table->tinyInteger('is_featured')->default(0);

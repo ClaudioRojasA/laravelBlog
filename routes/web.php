@@ -17,6 +17,7 @@ use App\Http\Controllers\PostController;
 Route::get('/',[PostController::class, 'index']);
 
 Route::get('admin/posts/add',[PostController::class, 'add']);
+Route::post('admin/posts/store',[PostController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -136,7 +136,9 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <form action ="" method ="POST" enctype="multipart/form-data">
+                            <!-- Ingresar post a BDD -->
+                            <form action ="{{url('admin/posts/store')}}" method ="POST" enctype="multipart/form-data">
+                                @csrf
                                 <h6 class="heading-small text-muted mb-4">Post information</h6>
                                 <div class="pl-lg-4">
                                     <div class="row">
@@ -153,7 +155,7 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="input-username">Post Category</label>
-                                                                                                <select name="cat_id" class ="form-control">
+                                                                                                <select name="category_id" class ="form-control">
                                                                                                             <option value="1">Web Development</option>
                                                                                                             <option value="2">Fashion</option>
                                                                                                             <option value="3">Inspiration</option>
