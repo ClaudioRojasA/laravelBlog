@@ -175,7 +175,7 @@
                                 <div class="pl-lg-4 ">
                                     <label class="form-control-label ">Upload Post image</label>
                                     <div class="input-group">
-                                        <input type="file" name = "post_image" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                        <input type="file" name = "image" class="form-control" id="image" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                                     </div>
                                 </div>
                                 <div class="d-flex mt-3 justify-content-end">
